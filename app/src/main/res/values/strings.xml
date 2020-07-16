@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Share me</string>
+
+    <string name="facebook_app_id">1141355062901806</string>
+    <string name="fb_login_protocol_scheme">fb1141355062901806</string>
+
+
+    //login option
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="Share_files">Share Data</string>
+    <string name="content">Share any type of files, images , videos &amp; apps from one device to another within no time. Data can be backed up in the app for you. Provide permission to backup your data.</string>
+    <string name="create_account">Create Account</string>
+    <string name="sign_in">Sign in</string>
+    //sign in
+    <string name="login_in">Login to Share Me</string>
+    <string name="email_address">Email Address*</string>
+    <string name="email_error">*Please enter the valid email.</string>
+    <string name="password">Password*</string>
+    <string name="password_error">*Please enter the valid password.</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    //create account
+    <string name="create_share_me">Create share me account</string>
+    <string name="phone_number">Phone Number*</string>
+    <string name="phone_error">*Please enter the valid phone number</string>
+    <string name="cnf_password">Confirm Password*</string>
+    <string name="cnf_pswrd_error">*Please retype the password</string>
+    //forgot password
+    <string name="forgot_password_title">Forgot Password</string>
+    <string name="forgot_content">Please enter registered email address/phone number we will send otp on your email/phone.</string>
+    <string name="emailphone_error">*Please enter the valid email/phone.</string>
+    <string name="email_phone">Email Address / Phone Number*</string>
+    <string name="submit">Submit</string>
+    //otp
+    <string name="otp">OTP</string>
+    <string name="otp_content">Please enter 4 digit otp here</string>
+    <string name="otp_hint">****</string>
+    <string name="recieve">"Didn't receive verification email?"</string>
+    <string name="resend">Resend</string>
+    <string name="otp_error">*Please enter the valid OTP.</string>
+    //verify email
+    <string name="verify_email_title">Verify your Email Address</string>
+    <string name="verify_email_content">To verify your email address, enter the code sent to your email</string>
+    <string name="confirm">Confirm</string>
+
+</resources>

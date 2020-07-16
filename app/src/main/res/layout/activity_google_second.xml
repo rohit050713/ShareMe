@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/green_gradient_bg"
+    tools:context=".Activity.GoogleSecond">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/login_option_bg"
+        >
+        <LinearLayout
+            android:padding="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/google_img"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:src="@drawable/logo"
+
+        />
+
+    <TextView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/google_name"
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/sfprotextmedium"
+        android:gravity="center"
+        android:text="@string/Share_files"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp"
+        />
+    <TextView
+        android:id="@+id/google_email"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/sfprotextregular"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10ssp"
+        />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/google_continue"
+                android:layout_width="@dimen/_240sdp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/google_bg"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:src="@mipmap/google_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/_30sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sfprotextmedium"
+                    android:gravity="center"
+                    android:text="Continue with Google"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:alpha="0.7"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/signout"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/google_bg"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sfprotextmedium"
+                    android:gravity="center"
+                    android:text="Logout"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+<corners
+    android:radius="@dimen/_10sdp"/>
+    <solid
+        android:color="#2c6eeb"/>
+</shape>
+    </item>
+    <item>
+        <ripple
+            android:color="@android:color/darker_gray"
+            >
+            <item
+                android:id="@android:id/mask"
+                android:drawable="@color/facebook_color"
+                />
+        </ripple>
+    </item>
+</layer-list>

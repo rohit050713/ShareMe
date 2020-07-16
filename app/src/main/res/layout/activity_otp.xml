@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green_gradient_bg"
+    tools:context=".Activity.Otp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/login_option_bg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+        <LinearLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo"/>
+            <TextView
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/otp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"
+                android:fontFamily="@font/sfprotextmedium"
+                />
+            <TextView
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/otp_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/sfprotextregular"/>
+
+            <com.chaos.view.PinView
+                android:id="@+id/otp"
+                style="@style/PinWidget.PinView"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:itemBackground="@color/white"
+                app:itemRadius="@dimen/_10sdp"
+                app:viewType="rectangle"
+                app:itemSpacing="@dimen/_10sdp"
+                android:hint="@string/otp_hint"
+                android:textColorHint="#84898a"
+                android:inputType="number"
+                app:itemCount="4"
+
+                app:lineColor="@color/white"
+                app:hideLineWhenFilled="true"
+                android:cursorVisible="false"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="#84898a"
+                app:cursorWidth="@dimen/_1sdp"
+                app:cursorColor="#fa2551"
+                />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_gravity="center"
+                android:id="@+id/tv_otp_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/otp_error"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@android:color/holo_red_dark"
+                android:fontFamily="@font/sfprotextregular"
+                />
+
+
+
+
+
+
+            <TextView
+                android:background="@drawable/login_option_btn_green"
+                android:id="@+id/otp_submit"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingEnd="@dimen/_20sdp"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/submit"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sfprotextregular"
+                android:textSize="@dimen/_12ssp"
+                android:layout_weight="1"
+                />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_50sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/_20sdp"
+
+                >
+                <TextView
+                    android:id="@+id/tv_createaccount"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recieve"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/sfprotextregular"
+                    android:textSize="@dimen/_9ssp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resend"
+                    android:textColor="#a5e2ec
+
+"
+                    android:textSize="@dimen/_10ssp"
+                    android:fontFamily="@font/sfprotextregular"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
